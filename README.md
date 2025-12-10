@@ -10,7 +10,7 @@ Garry's Mod is a physics sandbox. There aren't any predefined aims or goals. We 
 docker run -it \
     -p 27015:27015/tcp \
     -p 27015:27015/udp \
-    hackebein/garrysmod
+    schlabbi/garrysmod
 ```
 
 ## Enable API
@@ -20,7 +20,7 @@ docker run -it \
     -p 27015:27015/tcp \
     -p 27015:27015/udp \
     -e "AUTHKEY=..." \
-    hackebein/garrysmod
+    schlabbi/garrysmod
 ```
 Get your [AUTHKEY](http://steamcommunity.com/dev/apikey)
 
@@ -32,7 +32,7 @@ docker run -it \
     -p 27015:27015/tcp \
     -p 27015:27015/udp \
     -e "GLST=..." \
-    hackebein/garrysmod
+    schlabbi/garrysmod
 ```
 
 Get your [GLST](http://steamcommunity.com/dev/managegameservers) (`APPID: 4000`)
@@ -46,7 +46,7 @@ docker run -it \
     -p 27015:27015/udp \
     -e "AUTHKEY=..." \
     -e "WORKSHOPCOLLECTIONID=..." \
-    hackebein/garrysmod
+    schlabbi/garrysmod
 ```
 
 ## Config
@@ -56,7 +56,7 @@ docker run -it \
     -p 27015:27015/tcp \
     -p 27015:27015/udp \
     -v ./server.cfg:/opt/steam/garrysmod/cfg/server.cfg \
-    hackebein/garrysmod
+    schlabbi/garrysmod
 ```
 
 ## Example for TTT
@@ -74,11 +74,11 @@ docker run -it \
     -e "WORKSHOPDL=843519054" \
     -v ./server.cfg:/opt/steam/garrysmod/cfg/server.cfg \
     -v ./overlay:/opt/overlay \
-    hackebein/garrysmod
+    schlabbi/garrysmod
 ```
 
-Checkout [overlay](https://github.com/Hackebein/docker-srcds#overlay-folder) to overwrite files that are provided by Steam.
-Go to [Workshopp Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=843519054)
+Checkout [overlay](https://github.com/Schlabbi/docker-srcds#overlay-folder) to overwrite files that are provided by Steam.
+Go to [Workshop Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=843519054)
 
 ## Additional Environment
 
@@ -108,4 +108,4 @@ WORKSHOPDL: downloads workshop collection for client before joining
 
 ## More Options
 
-You can found more configuration options on the parent image page [hackebein/srcds](https://github.com/Hackebein/docker-srcds)
+You can found more configuration options on the parent image page [schlabbi/srcds](https://github.com/Schlabbi/docker-srcds)

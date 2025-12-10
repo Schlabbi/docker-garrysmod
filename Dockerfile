@@ -1,4 +1,4 @@
-FROM hackebein/srcds
+FROM schlabbi/srcds
 
 ENV \
 	# App
